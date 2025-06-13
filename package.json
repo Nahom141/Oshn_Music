@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "tail":"npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",    
+    "tail": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "built": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
