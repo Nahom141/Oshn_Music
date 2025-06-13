@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
+    <script defer src="./assets/fontawesome/js/solid.min.js"></script>
+  </head>
+  <body class="dark">
+    <main class="bg-zinc-200 dark:bg-zinc-900">
+      <header class="text-zinc-200">
+        <div 
+          id="dark-mode"
+          class="fixed z-10 top-40 rounded-l-lg cursor-pointer inline-block w-12 bg-zinc-900 dark:bg-zinc-200 text-zinc-200 dark:text-zinc-900 right-0 text-4xl p-2"
+        >
+          <span class=" dark:hidden">
+            <i class="fa-solid fa-sun "></i>
+          </span>
+          <span class="hidden dark:inline">
+            <i class="fa-solid fa-moon"></i>
+          </span>
+        </div>
+        <nav class="flex sticky z-10 top-0 bg-gradient-to-l from-rose-500 to-pink-500">
+          <div class="flex items-center p-2 gap-2 cursor-pointer">
+            <img
+              src="./assets/images/logo-inverted.png"
+              width="50"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="cursor-pointer flex items-center font-bold text-amber-50">
+            Oshn:<span class="text-sky-900">Music</span>
+          </div>
+          <div
+            id="hamburger"
+            class="block justify-center items-center ml-auto p-4 cursor-pointer md:hidden"
+          >
+            <img src="./assets/images/icon-hamburger.svg" alt="" srcset="" />
+          </div>
+          <div class="md:flex hidden flex-1 items-center justify-end">
+            <div class="nav-menu">Home</div>
+
+            <div class="nav-menu">Lineup</div>
+            <div class="nav-menu group">
+              Tickets
+              <div
+                id="ticket"
+                class="group-hover:block hidden right-0 absolute top-full whitespace-nowrap bg-rose-500 rounded-b-md text-right"
+              >
+                <div class="p-4 hover:bg-white/10 transition color linear">
+                  Single Day Tickets
+                </div>
+                <div class="p-4 hover:bg-white/10 transition color linear">
+                  7 Day Tickets
+                </div>
+              </div>
+            </div>
+
+            <div class="nav-menu">Support</div>
+          </div>
+        </nav>
+        <div id="mobile-menu" class="hidden">
+          <div
+            class="md:hidden flex flex-col items-center justify-center bg-gradient-to-l from-rose-500 to-pink-500"
+          >
+            <div class="nav-menu">Home</div>
+            <div class="nav-menu">Lineup</div>
+            <div
+              id="mobile-ticket"
+              class="text-center relative h-full font-bold cursor-pointer p-4 text-pink-200 hover:bg-white/10 transition-colors ease-in-out;"
+            >
+              Tickets
+              <div id="mobile-sub" class="text-center font-light hidden">
+                <div class="p-4 hover:bg-white/10 transition color linear">
+                  Single Day Tickets
+                </div>
+                <div class="pt-4 hover:bg-white/10 transition color linear">
+                  7 Day Tickets
+                </div>
+              </div>
+            </div>
+            <div class="nav-menu">Support</div>
+          </div>
+        </div>
+        <div
+          style="background-image: url('./assets/images/hero.jpg')"
+          class="flex flex-col items-center justify-center h-[calc(100vh-200px)] min-h-[400px] bg-cover bg-center bg-fixed text-center"
+        >
+          <div
+            class="py-4 px-4 bg-white/30 backdrop-blur-md rounded-md relative"
+          >
+            <div>
+              <img
+                src="./assets/images/logo.png"
+                alt=""
+                srcset=""
+                class="size-40 animate-shake"
+              />
+            </div>
+            <div
+              class="rounded-full bg-pink-500 w-13 h-13 absolute mt-[-67px] ml-[54px]"
+            ></div>
+            <div
+              class="gap-1 flex justify-center items-center absolute mt-[-50px] ml-[62px]"
+            >
+              <div
+                class="w-1 h-2 bg-pink-300 rounded-full animate-wave animation-delay-[150ms]"
+              ></div>
+              <div
+                class="w-1 h-3 bg-pink-200 rounded-full animate-wave animation-delay-[70ms]"
+              ></div>
+              <div
+                class="w-1 h-4 bg-pink-100 rounded-full animate-wave animation-delay-[200ms]"
+              ></div>
+              <div
+                class="w-1 h-3 bg-pink-200 rounded-full animate-wave animation-delay-[75ms]"
+              ></div>
+              <div
+                class="w-1 h-2 bg-pink-300 rounded-full animate-wave animation-delay-[200ms]"
+              ></div>
+            </div>
+            <div class="font-bold text-pink-100">
+              Oshn:<span class="text-sky-900">Music</span>
+            </div>
+          </div>
+          <div class="text-pink-50 font-bold mt-4">
+            Update me with News and Promotions!
+          </div>
+
+          <div>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input
+              class="bg-white/30 backdrop-blur-md p-2 placeholder-sky-900 focus:outline-pink-400 mt-4 border border-pink-100 rounded-md text-sky-900 caret-pink-400"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button
+              class="px-4 py-2 bg-pink-400 rounded-md hover:bg-sky-900 shadow-sky-700 text-pink-100 cursor-pointer font-bold transition-colors ease-in-out"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="max-w-screen-lg mx-auto mt-20 dark:text-zinc-200 ">
+        <h1 class="mb-5"> <span class="text-transparent bg-gradient-to-b from bg-cyan-500 to-pink-500 bg-clip-text">Handliners</span></h1>
+        <p class="mb-5">
+         This year’s headliners are more than just performers — they’re the heartbeat of the festival. From electrifying stage presence to unforgettable soundscapes, these artists are set to deliver moments you’ll carry long after the music fades.
+        </p>
+
+        <div class="flex">
+          <div
+            id="left"
+            class="flex items-center justify-center cursor-pointer relative mt-[-78px] "
+          >
+            <i class="fas fas fa-angle-left text-5xl"></i>
+          </div>
+          <div
+            id="coursel"
+            class="scroll-smooth w-full snap-x overflow-x-auto pb-5 flex gap-4"
+          >
+            <div class="min-w-[80%] md:min-w-[40%]">
+              <div
+                style="background-image: url(./assets/images/band1.jpg)"
+                class="h-80 bg-center snap-center shadow-md shadh-80 shadow-black/20 bg-cover rounded-lg w-full"
+              ></div>
+              <h5 class="mt-2">Echo Drift </h5>
+              <p>from Apr 29 - May 3</p>
+            </div>
+
+            <div class="min-w-[80%] md:min-w-[40%]">
+              <div
+                style="background-image: url(./assets/images/band4.jpg)"
+                class="h-80 bg-center snap-center shadow-md shadow-black/20 bg-cover rounded-lg w-full"
+              ></div>
+              <h5 class="mt-2">Crimson Stereo</h5>
+              <p>from May 15 - May 19</p>
+            </div>
+
+            <div class="min-w-[80%] md:min-w-[40%]">
+              <div
+                style="background-image: url(./assets/images/band2.jpg)"
+                class="h-80 bg-center snap-center shadow-md shadow-black/20 bg-cover rounded-lg w-full"
+              ></div>
+              <h5 class="mt-2">TERRA </h5>
+              <p>from July 23 - july 25</p>
+            </div>
+
+            <div class="min-w-[80%] md:min-w-[40%]">
+              <div
+                style="background-image: url(./assets/images/band3.jpg)"
+                class="h-80 bg-center snap-center shadow-md shadow-black/20 bg-cover rounded-lg w-full"
+              ></div>
+              <h5 class="mt-2">The Hollow Keys</h5>
+              <p>from jun 11 - jun 16</p>
+            </div>
+            <div class="min-w-[80%] md:min-w-[40%]">
+              <div
+                style="background-image: url(./assets/images/band5.jpg)"
+                class="h-80 bg-center snap-center shadow-md shadow-black/20 bg-cover rounded-lg w-full"
+              ></div>
+              <h5 class="mt-2">Elowen Grey</h5>
+              <p>from jan 5 - jan 6</p>
+            </div>
+            <div class="min-w-[80%] md:min-w-[40%]">
+              <div
+                style="background-image: url(./assets/images/band6.jpg)"
+                class="h-80 bg-center snap-center shadow-md shadow-black/20 bg-cover rounded-lg w-full"
+              ></div>
+              <h5 class="mt-2">Aeris Bloom</h5>
+              <p>from Nov 5 - Nov 9</p>
+            </div>
+            <div class="min-w-[80%] md:min-w-[40%]">
+              <div
+                style="background-image: url(./assets/images/band7.jpg)"
+                class="h-80 bg-center snap-center shadow-md shadow-black/20 bg-cover rounded-lg w-full"
+              ></div>
+              <h5 class="mt-2">Nocturne Rise</h5>
+              <p>from jan 2 - jan 9</p>
+            </div>
+          </div>
+
+          <div
+            id="right"
+            class="flex items-center justify-center cursor-pointer relative mt-[-78px] "
+          >
+            <i class="fas fas fa-angle-right text-5xl"></i>
+          </div>
+        </div>
+        <h2 class="mt-20">Lineup</h2>
+        <p class="mt-2" >Don't miss out on your favorite artist and songs </p>
+        <div class="relative  dark:bg-zinc-900 border border-zinc-500  text-teal-600 px-4 p-3 rounded-lg mt-10">
+    <div class="absolute top-0 left-1/2 w-4 ml-[-8px] h-full bg-gradient-to-b from-sky-900 via-zinc-800 to-teal-800 rounded-lg">
+
+      <div class="top-1/2 sticky">
+<div class="relative size-4">
+  <div class="animate-ping rounded-full size-4 bg-pink-500 opacity-75 absolute "></div>
+  <div class=" bg-pink-500 size-4 rounded-full"></div>
+</div>
+
+      </div>
+      
+    </div>
+
+    <div class=" grid grid-cols-2 gap-8  dark:text-pink-100 p-4">
+      <div class="font-bold bg-zinc-700 p-4 rounded-lg text-2xl">1st July</div>
+      <div></div>
+      <div class="text-right">
+        <div class="font-bold"> TERRA </div>
+        <div class="text-zinc-400 ">8pm - Sage Stage</div>
+      </div>
+      <div></div>
+      <div></div>
+      <div class="text-left">
+        <div class="font-bold"> Elowen Grey</div>
+        <div class="text-zinc-400 ">3pm - Sage Stage</div>
+      </div>
+      <div></div>
+      <div></div>
+      <div class="font-bold bg-zinc-700 p-4 rounded-lg text-2xl">1st July</div>
+      <div></div>
+      <div class="text-right">
+        <div class="font-bold"> Echo Drift</div>
+        <div class="text-zinc-400 ">1pm - Sage Stage</div>
+      </div>
+      <div></div>
+      <div></div>
+      <div class="text-left">
+        
+        <div class="font-bold"> Aeris Bloom</div>
+        <div class="text-pink-300 ">9pm - Sage Stage</div>
+      </div>
+      
+     
+      
+      
+      
+    </div>
+        </div>
+<div>
+  <h1 class="mt-20">Tickets</h2>
+    <table class="table w-full border border-zinc-500 mt-4 border-collapse">
+      <thead>
+        <tr>
+          <th class="border border-zinc-500 p-2">Tickets</th>
+          <th class="border border-zinc-500 p-2">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-zinc-500 px-3 py-2">
+            Single Day Ticket
+          </td>
+          <td class="border border-zinc-500 px-3 py-2">
+            $15
+          </td>
+        </tr>
+        <tr>
+          <td class="border border-zinc-500 px-3 py-2">
+            7 Day Ticket
+          </td>
+          <td class="border border-zinc-500 px-3 py-2">
+            $100
+          </td>
+        </tr>
+      </tbody>
+      <caption class="caption-bottom mt-5">Once it's gone, it's gone</caption>
+    </table>
+</div>
+
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
